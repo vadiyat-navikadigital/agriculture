@@ -7,7 +7,8 @@
     <title>Natu Leaf</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/global.css" rel="stylesheet" />
-    <link href="css/faq.css" rel="stylesheet" />
+    <link href="css/contact.css" rel="stylesheet" />
+    <link href="css/blog.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
@@ -16,7 +17,6 @@
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </head>
-
   <body>
     <!-- <section id="top">
       <div class="container">
@@ -156,10 +156,12 @@
             <ul class="nav navbar-nav">
               <li><a class="m_tag" href="index.html">Home</a></li>
               <li><a class="m_tag" href="about.html">About</a></li>
-              <li><a class="m_tag" href="contact.html">Contact Us</a></li>
-              <li><a class="m_tag" href="member.html">Member</a></li>
+              <li>
+                <a class="m_tag" href="contact.html">Contact Us</a>
+              </li>
+              <li><a class="m_tag active_tab" href="member.html">Member</a></li>
               <li><a class="m_tag" href="jobpost.html">Job Post</a></li>
-              <li><a class="m_tag active_tab" href="login.html">Login</a></li>
+              <li><a class="m_tag" href="login.html">Login</a></li>
               <li><a class="m_tag" href="admin_panel.html">Admin Panel</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right nav_1">
@@ -206,85 +208,107 @@
         <div class="row">
           <div class="center_o1 text-center clearfix">
             <div class="col-sm-12">
-              <h2 class="mgt">Login</h2>
-              <h5><a href="./index.html">Home</a> / Login</h5>
+              <h2 class="mgt">Member</h2>
+              <h5><a href="index.html">Home</a> / Member</h5>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- main login code starts -->
-    <section
-      id="footer"
-      style="
-        background-color: black;
-        padding-top: 40px;
-        padding-bottom: 20px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-      "
-    >
+    <section id="contact" class="clearfix">
       <div class="container">
-        <form>
-          <div class="mb-3">
-            <label
-              for="exampleInputEmail1"
-              class="form-label"
-              style="
-                font-size: 16px;
-                color: white;
-                margin-top: 20px;
-                margin-bottom: 20px;
-              "
-              >Email address</label
-            >
-            <input
-              style="width: 300px; margin: auto"
-              type="email"
-              placeholder="Enter Your Email"
-              required
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+        <div class="row">
+          <div class="contact_2 clearfix text-center">
+            <!-- <div class="col-sm-6">
+              <div class="contact_2l clearfix">
+                <h1 class="mgt">Contact Details</h1>
+                <hr class="hr_1 mgl" />
+                <h4 class="mgt italic normal">
+                  Address: NO. 172 - Kingdom Oxford Street. 000 United Kingdom.
+                </h4>
+                <h4 class="italic normal">
+                  Phones: <a href="#">(+00) 123-456-789</a> <br />
+                  <a href="#">(+00) 123-456-789</a>
+                </h4>
+                <h4 class="italic normal">
+                  E-mail: <a href="#">info@gmail.com</a>
+                </h4>
+                <h4 class="italic normal">We are open: Mon-Fri: 11am - 7pm</h4>
+                <ul class="social-network social-circle">
+                  <li>
+                    <a href="#" class="icoRss" title="Rss"
+                      ><i class="fa fa-rss"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="icoFacebook" title="Facebook"
+                      ><i class="fa fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="icoTwitter" title="Twitter"
+                      ><i class="fa fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="icoGoogle" title="Google +"
+                      ><i class="fa fa-google-plus"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="icoLinkedin" title="Linkedin"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div> -->
+            <div class="col-sm-6 d-flex justify-content-center">
+              <div class="contact_2r clearfix">
+                <h1 class="mgt">Be a Member</h1>
+                <hr class="hr_1 mgl" />
+                <div class="blog1l5 cleafix">
+                  <input
+                    placeholder="Your Full Name"
+                    class="form-control"
+                    type="text"
+                    required
+                  />
+                  <input
+                    placeholder="Your Email"
+                    class="form-control"
+                    type="email"
+                    required
+                  />
+                  <input
+                    placeholder="Your 10 Digit Phone Number"
+                    class="form-control"
+                    type="number"
+                    oninput="this.value = this.value.replace(/\D/g, '').slice(0, 10)"
+                    required
+                  />
+                  <textarea
+                    placeholder="Your Message"
+                    class="form-control form_1"
+                  ></textarea>
+                  <h5 class="normal"><a class="button" href="#">Submit</a></h5>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label
-              for="exampleInputPassword1"
-              class="form-label"
-              style="
-                font-size: 16px;
-                color: white;
-                margin-top: 20px;
-                margin-bottom: 20px;
-              "
-              >Password</label
-            >
-            <input
-              style="width: 300px; margin: auto"
-              type="password"
-              placeholder="Enter Your Password"
-              class="form-control"
-              id="exampleInputPassword1"
-              required
-            />
-          </div>
-          <!-- <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div> -->
-
-          <h6 style="margin-bottom: 40px">
-            <a class="button" href="#">Login</a>
-          </h6>
-        </form>
+          <!-- <div class="contact_1 clearfix">
+            <div class="col-sm-12">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.53925916665!2d-80.29949920266738!3d25.782390733064336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C+FL%2C+USA!5e0!3m2!1sen!2sin!4v1530774403788"
+                style="border: 0; height: 450px; width: 100%"
+                allowfullscreen=""
+              ></iframe>
+            </div>
+          </div> -->
+        </div>
       </div>
     </section>
-
-    <!-- main login code ends -->
 
     <section id="footer">
       <div class="container">
@@ -372,7 +396,7 @@
                 <div class="col-sm-11">
                   <div class="head_t1i2r clearfix">
                     <h5 class="mgt">Address</h5>
-                    <h6>(+00) 123-456-789</h6>
+                    <h6>Porta, Semper, London</h6>
                   </div>
                 </div>
               </div>
@@ -391,5 +415,24 @@
         </div>
       </div>
     </section>
+
+    <script>
+      $(document).ready(function () {
+        /*****Fixed Menu******/
+        var secondaryNav = $(".cd-secondary-nav"),
+          secondaryNavTopPosition = secondaryNav.offset().top;
+        $(window).on("scroll", function () {
+          var navbar_height = document.querySelector(".navbar").offsetHeight;
+          var top = 30;
+          if ($(window).scrollTop() > secondaryNavTopPosition) {
+            secondaryNav.addClass("is-fixed");
+            $("body").css("padding-top", navbar_height);
+          } else {
+            secondaryNav.removeClass("is-fixed");
+            $("body").css("padding-top", 0);
+          }
+        });
+      });
+    </script>
   </body>
 </html>
